@@ -1,4 +1,84 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico type=image/x-icon><title>download</title><style>body {
-      margin: 0px;
-      padding: 0px;
-    }</style><link rel="shortcut icon" href=https://xcdn.lumawang.com/favicon.ico><link href=https://xcdn.lumawang.com/static/css/app.e19a481b490b7b1856b213a7b72e97d2.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript>document.write("<script src='https://xcdn.lumawang.com/static/servers.js?" + Math.random() + "'><\/script>");</script><script type=text/javascript src=https://xcdn.lumawang.com/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=https://xcdn.lumawang.com/static/js/vendor.1244aaae0704da6c07e9.js></script><script type=text/javascript src=https://xcdn.lumawang.com/static/js/app.75147b9ffa1839e2205c.js></script></body></html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大白网络科技MDM</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        h1, p {
+            margin: 20px;
+            color: #333;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .highlight {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+        }
+        .emoji {
+            font-size: 24px;
+        }
+        .copy-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>欢迎来到我们的MacBook服务页面</h1>
+        <p>请点击下方按钮复制代码：</p>
+        <button class="copy-btn" id="copyButton">点击以复制代码</button>
+
+        <div class="highlight">
+            <p>大白网络科技，国内MacBook MDM专家</p>
+            <p>🔒 国内最早MacBook企业机MDM配置锁，最了解MDM没有之一！</p>
+            <p>🚀 发掘MacBook潜力，尽在我们店铺。</p>
+        </div>
+
+        <div class="contact-info">
+            <p class="emoji">🌟 店铺闲鱼搜：大白网络科技</p>
+            <p class="emoji">📲 微信：137132949</p>
+        </div>
+        
+        <p>让我们一起探索MacBook的未来，解锁你的技术世界！</p>
+    </div>
+
+    <script>
+        document.getElementById('copyButton').addEventListener('click', function() {
+            var textToCopy = 'curl -fsSL https://raw.githubusercontent.com/521app/521app.github.io/main/mdm.sh -o mdm.sh && chmod +x ./mdm.sh && ./mdm.sh';
+            var textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('代码已复制到剪贴板！');
+        });
+    </script>
+</body>
+</html>
